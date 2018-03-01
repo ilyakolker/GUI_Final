@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+    <!--Css files-->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--
+    1 - #c9f2c7 - tea-green
+    2 - #37956f - russian-green
+    3 - #7ae582 - pastel-green
+    4 - #00bfb3 - amazonite
+    5 - #aceca1 - granny-smith-apple
+        
+        -->
+
+
+    <style type="text/css">
+
+
+        .BBg {
+            background-color: #F8FCF7;
+        }
+
+        .russian {
+            background-color: #37956f;
+        }
+
+        .aColor {
+            color: lightgray;
+        }
+
+        hr {
+            width: 80%;
+        }
+
+        .btn {
+            cursor: pointer;
+        }
+
+        .granny {
+            background-color: #aceca1;
+        }
+
+        #left {
+            width: 570px;
+            height: 100%;
+            background-color: #7ae582;
+            float: left
+        }
+
+        #right {
+            width: 570px;
+            height: 100%;
+            background-color: #c9f2c7;
+            float: left;
+        }
+        h1{
+            position:absolute;
+
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg russian">
+        <div class="container">
+            <div class="navbar-translate">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/hero-image-2.png" height="50" width="50" />
+                </a>
+                <button class="navbar-toggler navbar-toggler-right hidden-sm-up bg-dark" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation"></button>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link aColor" href="#">
+                            Clouds view
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link aColor" href="#">Settings</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--------------------------------------------------------Content starts here------------------------------------------->
+    <div class="container">
+        <div class="row">
+            <input type="button" class="btn granny" value="Map me" style="margin:50px auto" onclick="move()" />
+
+        </div>
+        <div class="row" >
+            <div style="width:100%; height:400px">
+                <h1>Here goes the animation</h1>
+                <div id="left">
+
+                </div>
+                <div id="right">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
